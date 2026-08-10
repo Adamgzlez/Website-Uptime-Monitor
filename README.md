@@ -1,5 +1,229 @@
 # Website-Uptime-Monitor
-Created an Azure Website Monitor to know when its down
+# Azure Website Uptime Monitor
+
+## Overview
+
+This project is a cloud-based website monitoring solution built in Microsoft Azure. It automatically checks the availability of multiple websites every five minutes, records the results in Azure monitoring services, and sends an email alert when a monitored website becomes unavailable.
+
+The project demonstrates cloud automation, monitoring, alerting, logging, and troubleshooting using Azure services.
+
+## Architecture
+
+The solution uses the following Azure services:
+
+* Azure Function App
+* Timer Trigger
+* Azure Logic Apps
+* Azure Log Analytics Workspace
+* Azure Application Insights
+* Azure Storage Account
+* Azure Workbooks
+
+### Workflow
+
+1. An Azure Function runs every five minutes.
+2. The function checks the availability of configured websites.
+3. HTTP response results are recorded in Azure monitoring services.
+4. Failure events can be queried through Log Analytics.
+5. A Logic App sends an email notification when a website failure is detected.
+6. Azure Workbooks provide a dashboard for monitoring uptime and failures.
+
+## Websites Monitored
+
+The initial configuration monitors:
+
+* Google
+* Microsoft
+* Example.com
+
+Additional websites can easily be added to the Function configuration.
+
+## Project Architecture Diagram
+
+[Insert architecture diagram here]
+
+Example flow:
+
+Websites → Azure Function → Application Insights / Log Analytics → Logic App → Email Alert
+
+## Technologies Used
+
+* Microsoft Azure
+* Azure Functions
+* Azure Logic Apps
+* Azure Monitor
+* Log Analytics
+* Application Insights
+* Azure Workbooks
+* Python
+* HTTP/HTTPS
+* KQL
+
+## Implementation
+
+### 1. Resource Group
+
+Created a dedicated Azure resource group to organize the monitoring infrastructure.
+
+`rg-uptime-monitor`
+
+### 2. Azure Function
+
+Created an Azure Function App containing a Timer Trigger.
+
+The function executes every five minutes using the following schedule:
+
+`0 */5 * * * *`
+
+The script sends HTTP requests to each configured website and records whether the request succeeds or fails.
+
+### 3. Website Availability Checks
+
+The Function checks each website and evaluates the HTTP response.
+
+Successful responses indicate that the website is reachable.
+
+Failed requests, timeouts, or unsuccessful HTTP responses generate failure information that can be used for alerting and troubleshooting.
+
+### 4. Application Insights
+
+Application Insights was enabled for the Function App to provide:
+
+* Function execution monitoring
+* Performance information
+* Failure tracking
+* Request telemetry
+* Application diagnostics
+
+### 5. Log Analytics
+
+A Log Analytics Workspace was configured to centralize monitoring data.
+
+KQL queries were used to investigate:
+
+* Function executions
+* Website failures
+* Availability events
+* Application errors
+
+### 6. Logic App Email Alerts
+
+An Azure Logic App was created to automate failure notifications.
+
+When the monitoring workflow detects an outage, the Logic App sends an email notification so the issue can be investigated quickly.
+
+### 7. Monitoring Dashboard
+
+Azure Workbooks were used to create a visual monitoring dashboard displaying website availability and monitoring information.
+
+The dashboard provides a centralized view of the health of the monitored websites.
+
+## Screenshots
+
+### Azure Resources
+
+[Insert screenshot of resource group]
+
+### Function App
+
+[Insert screenshot of Function App]
+
+### Timer Trigger
+
+[Insert screenshot showing the five-minute schedule]
+
+### Function Code
+
+[Insert screenshot of Python monitoring code]
+
+### Successful Function Execution
+
+[Insert screenshot of test/run result]
+
+### Log Analytics
+
+[Insert screenshot of KQL query/results]
+
+### Logic App
+
+[Insert screenshot of Logic App designer]
+
+### Email Alert
+
+[Insert screenshot of successful outage notification]
+
+### Monitoring Dashboard
+
+[Insert screenshot of Azure Workbook]
+
+## Challenges and Troubleshooting
+
+During the project, I encountered and resolved several issues.
+
+### Function Runtime Configuration
+
+The Function App initially required troubleshooting around the Python runtime and Azure Function configuration.
+
+### Logic App Authentication
+
+The email alert workflow required configuring the appropriate connector and authentication before notifications could be sent successfully.
+
+### Alert Testing
+
+Initial alert tests did not trigger correctly. I reviewed the workflow execution history, corrected the configuration, and successfully generated an email notification.
+
+These troubleshooting steps helped reinforce the importance of reviewing logs, validating workflow conditions, and testing cloud automation components independently.
+
+## Skills Demonstrated
+
+This project demonstrates experience with:
+
+* Cloud infrastructure deployment
+* Azure monitoring
+* Serverless computing
+* Python automation
+* HTTP availability monitoring
+* Log analysis
+* KQL
+* Event-driven automation
+* Email alerting
+* Troubleshooting
+* Dashboard creation
+* Azure resource management
+
+## Future Improvements
+
+Possible improvements include:
+
+* Monitoring additional websites
+* Measuring website response times
+* Adding SSL certificate expiration monitoring
+* Creating severity levels for different failures
+* Adding Microsoft Teams or Slack notifications
+* Deploying resources with Terraform or Bicep
+* Storing historical uptime statistics
+* Creating SLA and uptime percentage reports
+* Adding geographic availability tests
+
+## Project Outcome
+
+The completed system automatically monitors website availability every five minutes, records monitoring information in Azure, provides a centralized dashboard, and generates email notifications when failures occur.
+
+The project demonstrates how Azure serverless and monitoring services can be combined to build a practical cloud operations monitoring solution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 1
 <img width="1383" height="429" alt="Screenshot 1 — Resource Group Overview" src="https://github.com/user-attachments/assets/c77e1dcf-ee65-4e62-b62e-f07ba193c3cd" />
