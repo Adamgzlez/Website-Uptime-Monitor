@@ -128,11 +128,7 @@ The dashboard provides a centralized view of the health of the monitored website
 
 <img width="2047" height="159" alt="Screenshot 2 — Function App Overview" src="https://github.com/user-attachments/assets/939c947d-0370-422f-bcf3-e48eec1562fb" />
 
-### Timer Trigger
-
-[Insert screenshot showing the five-minute schedule]
-
-### Function Code
+### Function Code with Timer Trigger
 
 <img width="1077" height="841" alt="Screenshot 3 — VS Code Code Screenshot" src="https://github.com/user-attachments/assets/e56d3ab8-f693-4e75-bbc9-86edacb7904f" />
 
@@ -151,6 +147,10 @@ The dashboard provides a centralized view of the health of the monitored website
 ### Logic App
 
 <img width="400" height="374" alt="06 - Logic App Designer" src="https://github.com/user-attachments/assets/1de7eb8c-d5cd-42cb-8184-2194c4a141e9" />
+
+### Website Down Failure Detection
+
+<img width="2048" height="192" alt="Screenshot 5 — Failure Detection" src="https://github.com/user-attachments/assets/adc839eb-b7c5-4f54-a1c0-753774487341" />
 
 ### Email Alert
 
