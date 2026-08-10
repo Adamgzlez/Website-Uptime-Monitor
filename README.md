@@ -142,9 +142,9 @@ The dashboard provides a centralized view of the health of the monitored website
 
 <img width="1313" height="77" alt="Screenshot 4 — Function Execution Logs" src="https://github.com/user-attachments/assets/a0797d70-3dc2-43e3-99f0-ff6624af5034" />
 
-### Log Analytics
-
 <img width="528" height="403" alt="Screenshot 7 — Logic App Run History" src="https://github.com/user-attachments/assets/d1b6bb21-af98-4956-815b-682cc8bfdb2f" />
+
+### Log Analytics
 
 <img width="2048" height="1076" alt="Screenshot 9 — Log Analytics Query Results" src="https://github.com/user-attachments/assets/92195792-f971-4976-b5a6-098f5e104eb2" />
 
