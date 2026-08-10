@@ -40,7 +40,7 @@ Additional websites can easily be added to the Function configuration.
 
 ## Project Architecture Diagram
 
-[Insert architecture diagram here]
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/881429c7-8a91-4b95-986e-1939c5bcf71d" />
 
 Example flow:
 
