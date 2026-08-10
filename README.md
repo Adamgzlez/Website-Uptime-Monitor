@@ -18,6 +18,9 @@ Created an Azure Website Monitor to know when its down
 <img width="2048" height="192" alt="Screenshot 5 — Failure Detection" src="https://github.com/user-attachments/assets/e09146de-3a45-4e05-8c3c-ecccb123eb46" />
 
 6
+<img width="400" height="374" alt="06 - Logic App Designer" src="https://github.com/user-attachments/assets/d187527d-9438-47ba-b2ba-1d449204be74" />
+
+6
 <img width="528" height="403" alt="Screenshot 7 — Logic App Run History" src="https://github.com/user-attachments/assets/3f51bedf-53ed-4e69-b544-86eaf2e07c10" />
 
 7
