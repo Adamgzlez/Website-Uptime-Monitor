@@ -148,7 +148,7 @@ The dashboard provides a centralized view of the health of the monitored website
 
 <img width="400" height="374" alt="06 - Logic App Designer" src="https://github.com/user-attachments/assets/1de7eb8c-d5cd-42cb-8184-2194c4a141e9" />
 
-### Website Down Failure Detection
+### Website Down Detection
 
 <img width="2048" height="192" alt="Screenshot 5 — Failure Detection" src="https://github.com/user-attachments/assets/adc839eb-b7c5-4f54-a1c0-753774487341" />
 
