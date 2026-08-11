@@ -1,4 +1,3 @@
-# Website-Uptime-Monitor
 # Azure Website Uptime Monitor
 
 ## Overview
